@@ -1,6 +1,6 @@
 //Creo il contenitore dei blocchi.
 const container = document.getElementById('grid');
- 
+
 
 //Ci sono 10 caselle per ongi riga (10).
 function generaTabella() {
@@ -16,6 +16,9 @@ function generaTabella() {
         box.addEventListener('click', () => {
             // Aggiungi una classe aggiuntiva al div cliccato
             box.classList.toggle('bk-blue');
+            
+            let bomb = Math.floor(Math.random() * 3);
+            
             console.log(bomb);
         });
 
