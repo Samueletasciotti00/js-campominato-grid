@@ -13,7 +13,7 @@
         box.classList.add('square');
 
         //Inserisco le caselle nel container
-        
+        container.append(box);
     }
 
 //L'utente cliccando sulla cella, essa si colorera di azzurro
