@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #011627;
+}
+
+#grid{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+#grid .square{
+    float: left;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 20px;
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
