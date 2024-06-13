@@ -1,6 +1,6 @@
-
-    //Creo il contenitore dei blocchi.
-    const container = document.getElementById('grid');
+//Creo il contenitore dei blocchi.
+const container = document.getElementById('grid');
+ 
 
 //Ci sono 10 caselle per ongi riga (10).
 function generaTabella() {
@@ -12,6 +12,13 @@ function generaTabella() {
         //Add Class
         box.classList.add('square');
 
+        // Aggiungo un event listener per il click a ciascun div
+        box.addEventListener('click', () => {
+            // Aggiungi una classe aggiuntiva al div cliccato
+            box.classList.toggle('bk-blue');
+            console.log(bomb);
+        });
+
         //Inserisco le caselle nel container
         container.append(box);
     }
@@ -20,5 +27,6 @@ function generaTabella() {
 //L'utente preme un bottone per generare la griglia di gioco.
 document.querySelector('.button-85').addEventListener('click', generaTabella);
 
-//L'utente cliccando sulla cella, essa si colorera di azzurro
-    //- emette in console con il numero della casella cliccata.
+
+//Aggiugnere la classe agli elementi appena creati
+
